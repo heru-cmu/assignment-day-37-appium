@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // TestNG untuk framework testing
+    testImplementation 'org.testng:testng:7.9.0'
+
+    // Appium Java Client untuk mobile automation
+    implementation 'io.appium:java-client:8.5.1'
+
+    // Optional: Apache Commons IO (untuk screenshot copy)
+    implementation 'commons-io:commons-io:2.11.0'
+
+    // Tambahkan Selenium Support
+    implementation 'org.seleniumhq.selenium:selenium-support:4.9.1'
+
+    // Optional: Apache Commons IO untuk screenshot
+    implementation 'commons-io:commons-io:2.11.0'
+}
+
+test {
+    useTestNG() {
+        suites 'src/test/resources/suites/smoke.xml'
+    }
+}
