@@ -73,5 +73,5 @@ src
 - Screen record run smoke.xml di device asli.
 - Screenshot otomatis dari listener saat test gagal.
 
-![Screenshot Hasil Run](docs/Screenshot 2026-04-03 220816.png )
+![Screenshot Hasil Run](docs/Screenshot 2026-04-03 220816.png)
 
